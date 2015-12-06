@@ -21,7 +21,7 @@ class Grid
   
   def configure_cells
     each_cell do |cell|
-      row, col = cell.row, cell, column
+      row, col = cell.row, cell.column
       
       cell.north = self[row - 1, col]
       cell.south = self[row + 1, col]
